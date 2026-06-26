@@ -1,6 +1,6 @@
 # Nigeria Business Tax Calculator
 
-A production-ready React application that estimates Nigerian business taxes — CIT, VAT, WHT, and PAYE — based on current FIRS rates (Finance Act 2023).
+A production-ready React application that estimates Nigerian business taxes — CIT, VAT, WHT, and PAYE — based on current NRS rates (Finance Act 2023).
 
 Built as a portfolio project targeting consulting and advisory firms (KPMG, Deloitte, PwC, EY).
 
