@@ -1,0 +1,49 @@
+/*
+ * index.css — global styles
+ *
+ * This file sets baseline styles that apply to the whole app.
+ * Component-specific styles are handled with inline styles inside each JSX file
+ * (a common pattern in React — keeps styles close to the component they belong to).
+ *
+ * Why inline styles in React?
+ * → No class name conflicts between components
+ * → Styles are scoped — they can't accidentally affect other parts of the page
+ * → Easy to make styles dynamic (e.g. change colour based on a number being negative)
+ */
+
+/* Box-sizing: border-radius means padding is included in width calculations.
+   This prevents elements from overflowing their containers unexpectedly. */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #111827;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Remove default list styling */
+ul, ol {
+  list-style: none;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Print styles — hides the tab buttons when user prints / saves as PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}
